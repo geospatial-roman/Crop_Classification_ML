@@ -39,11 +39,16 @@ First the multi-spectral Sentinel-2 data will be loaded and the pixel values wil
 
 After that the approach of Self Organizing maps using Artificial Neural Networks will be implemented to perform and unsupervised cluster analysis for these vectors and group similar spectal signatures. Lastly the clusters will be compared to the library of spectral signatures in order to find out which crop the clusteres fields are actually growing.
 
-![NIR raster](plots/reflectance_nir.jpg)
+Looking at a the refleactance of a singel band in a raster can give a overview over the area:
+![reflectance nir](plots/reflectance_nir.jpg)
 
-![Spectral Sig](plots/spec_sig.jpg)
+Looking at the spectral signature for a single pixel in all 9 bands, can show which kind of land cover lays unterneath
 
-By turning the refelctance of each piyel into a vector representing the spectral signature, the Self Organizing Map can be trained in order to allow clustering.
+![reflectance nir](plots/spec_sig.jpg)
+
+
+
+By turning the reflectance of each pixel into a vector representing the spectral signature, the Self Organizing Map can be trained in order to allow clustering.
 
 The hexagonal Map shows the ditribution of bins for the layer refelction of visible red for each pixel. The more iterations were performed, the better the bins will be sorted and smoother the hexagonal grid will be:
 
