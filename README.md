@@ -24,7 +24,7 @@ This notebook suggests a way to temp-spatially interpolate satellite data for mi
 
 As some months are not in the data set due to heavy cloud cover, the graph shows gaps. These can be calculated by a spline interpolation
 
-<div style="text-align:center; width=70; height=50"><img src="plots/interpolation_graph.jpg" /></div>
+<img align="left" width="50" height="30" src="plots/interpolation_graph.jpg">
 
 
 For further spatial analysis, however,  the actual raster mask of snow cover may be needed and this is where the spatial aspect of this interpolation approach comes into play. By taking the total snow cover values from the graph interpolation. The new raster will be created accordingly.
