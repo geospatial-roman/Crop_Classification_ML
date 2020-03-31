@@ -64,10 +64,17 @@ By turning the reflectance of each pixel into a vector representing the spectral
 The hexagonal Map shows the ditribution of bins for the layer refelction of visible red for each pixel. The more iterations were performed, the better the bins will be sorted and smoother the hexagonal grid will be:
 
 Binning after 1000 iterations
-![Hexagonal Red](plots/node_grid_1000.jpg)
+
+<p align="center">
+  <img width="600"  src="plots/node_grid_1000.jpg">
+</p>
+
 
 Binning afer 10000 iterations:
 
-![Hexagonal NIR](plots/node_grid_10000.png)
+<p align="center">
+  <img width="600"  src="plots/node_grid_10000.png">
+</p>
+
 
 By comparing the binned heatmap for each variable the correlation between variabels can be inspected. Variables showing the same distribution are strongly positivly correlated,  opposite maps show negative correlation. A very noisy heatmap would represent a variable, which has no influence on the binning.
