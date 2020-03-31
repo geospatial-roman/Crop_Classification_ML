@@ -19,20 +19,22 @@ Contains the basic functionality of how to read raster data into python and perf
 
 ![Raster Calculations](plots/RasterCalculations.jpg)
 __________________________________________________________________________________________________________
+
 ## Time Series Interpolations
 This notebook suggests a way to temp-spatially interpolate satellite data for missing scenes due to cloud cover. By calculation the NDSI (Normalized Difference Snow index) over  "Cerro San Lorenzo" at the border between Argentina and Chile. the average snow cover per month is calculated.
 
 As some months are not in the data set due to heavy cloud cover, the graph shows gaps. These can be calculated by a spline interpolation
 </br>
-<img align="center" width="100" height="70" src="plots/interpolation_graph.jpg">
+<img align="center" width="400" height="300" src="plots/interpolation_graph.jpg">
 </br>
 
 For further spatial analysis, however,  the actual raster mask of snow cover may be needed and this is where the spatial aspect of this interpolation approach comes into play. By taking the total snow cover values from the graph interpolation. The new raster will be created accordingly.
 
 </br>
-<img align="center" height="15em" src="plots/interpolation_raster.jpg">
+<img align="center" width="800" height="600" src="plots/interpolation_raster.jpg">
 </br>
 ________________________________________________________________________________________________________
+
 ## Crop Classification (using Self Organizing Maps)
 
 This notebook makes use of the spectral signatures of various crops to cluster crops by using an Artificial Neural Network and Self Organizing Maps.
