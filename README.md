@@ -17,7 +17,11 @@ The repositories are all just a playground, so they are constantly work in progr
 ## Python for Raster Analysis
 Contains the basic functionality of how to read raster data into python and perform raster calculations and visualization.
 
-![Raster Calculations](plots/RasterCalculations.jpg)
+<p align="center">
+  <img width="600"  src="plots/RasterCalculations.jpg">
+</p>
+
+
 __________________________________________________________________________________________________________
 
 ## Time Series Interpolations
@@ -26,14 +30,18 @@ This notebook suggests a way to temp-spatially interpolate satellite data for mi
 As some months are not in the data set due to heavy cloud cover, the graph shows gaps. These can be calculated by a spline interpolation
 
 <p align="center">
-  <img width="460" height="300" src="plots/interpolation_graph.jpg">
+  <img width="400" src="plots/interpolation_graph.jpg">
 </p>
 
 
 
 For further spatial analysis, however,  the actual raster mask of snow cover may be needed and this is where the spatial aspect of this interpolation approach comes into play. By taking the total snow cover values from the graph interpolation. The new raster will be created accordingly.
 
-![Raster Calculations](plots/interpolation_raster.jpg)
+<p align="center">
+  <img width="600"  src="plots/interpolation_raster.jpg">
+</p>
+
+
 
 _____________________________________________________________________________________________________________________
 
