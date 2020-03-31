@@ -45,11 +45,17 @@ First the multi-spectral Sentinel-2 data will be loaded and the pixel values wil
 After that the approach of Self Organizing maps using Artificial Neural Networks will be implemented to perform and unsupervised cluster analysis for these vectors and group similar spectal signatures. Lastly the clusters will be compared to the library of spectral signatures in order to find out which crop the clusteres fields are actually growing.
 
 Looking at a the refleactance of a singel band in a raster can give a overview over the area:
-![reflectance nir](plots/reflectance_nir.jpg)
+
+<p align="center">
+  <img width="600"  src="plots/reflectance_nir.jpg">
+</p>
+
 
 Looking at the spectral signature for a single pixel in all 9 bands, can show which kind of land cover lays unterneath
 
-![reflectance nir](plots/spec_sig.jpg)
+<p align="center">
+  <img width="600"  src="plots/spec_sig.jpg">
+</p>
 
 
 
