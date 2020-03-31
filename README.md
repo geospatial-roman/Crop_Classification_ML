@@ -23,14 +23,15 @@ ________________________________________________________________________________
 This notebook suggests a way to temp-spatially interpolate satellite data for missing scenes due to cloud cover. By calculation the NDSI (Normalized Difference Snow index) over  "Cerro San Lorenzo" at the border between Argentina and Chile. the average snow cover per month is calculated.
 
 As some months are not in the data set due to heavy cloud cover, the graph shows gaps. These can be calculated by a spline interpolation
-
-<img align="left" width="50" height="30" src="plots/interpolation_graph.jpg">
-
+</br>
+<img align="center" width="100" height="70" src="plots/interpolation_graph.jpg">
+</br>
 
 For further spatial analysis, however,  the actual raster mask of snow cover may be needed and this is where the spatial aspect of this interpolation approach comes into play. By taking the total snow cover values from the graph interpolation. The new raster will be created accordingly.
 
-![interpolation raster](plots/interpolation_raster.jpg)
-
+</br>
+<img align="center" height="15em" src="plots/interpolation_raster.jpg">
+</br>
 ________________________________________________________________________________________________________
 ## Crop Classification (using Self Organizing Maps)
 
