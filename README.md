@@ -13,26 +13,25 @@ The repositories are all just a playground, so they are constantly work in progr
 
 
 
-## Overview
 
-### Python for Raster Analysis
+## Python for Raster Analysis
 Contains the basic functionality of how to read raster data into python and perform raster calculations and visualization.
 
 ![Raster Calculations](plots/RasterCalculations.jpg)
-
-### Time Series Interpolations
+__________________________________________________________________________________________________________
+## Time Series Interpolations
 This notebook suggests a way to temp-spatially interpolate satellite data for missing scenes due to cloud cover. By calculation the NDSI (Normalized Difference Snow index) over  "Cerro San Lorenzo" at the border between Argentina and Chile. the average snow cover per month is calculated.
 
 As some months are not in the data set due to heavy cloud cover, the graph shows gaps. These can be calculated by a spline interpolation
 
-![interpolation graph](plots/interpolation_graph.jpg)
+![interpolation graph](plots/interpolation_graph.jpg =50x70)
 
 For further spatial analysis, however,  the actual raster mask of snow cover may be needed and this is where the spatial aspect of this interpolation approach comes into play. By taking the total snow cover values from the graph interpolation. The new raster will be created accordingly.
 
 ![interpolation raster](plots/interpolation_raster.jpg)
 
-
-### Crop Classification (using Self Organizing Maps)
+________________________________________________________________________________________________________
+## Crop Classification (using Self Organizing Maps)
 
 This notebook makes use of the spectral signatures of various crops to cluster crops by using an Artificial Neural Network and Self Organizing Maps.
 First the multi-spectral Sentinel-2 data will be loaded and the pixel values will be pooled, to reduce calculation time. Then Then each pixel will be converted into a vector representing the spectral signatures for the 9 bands in use (Band 1 to 9).
@@ -53,10 +52,10 @@ By turning the reflectance of each pixel into a vector representing the spectral
 The hexagonal Map shows the ditribution of bins for the layer refelction of visible red for each pixel. The more iterations were performed, the better the bins will be sorted and smoother the hexagonal grid will be:
 
 Binning after 1000 iterations
-![Hexagonal Red](plots/node_grid_1000.png)
+![Hexagonal Red](plots/node_grid_1000.jpg)
 
 Binning afer 10000 iterations:
 
-![Hexagonal NIR](plots/nodegrid_10000.png)
+![Hexagonal NIR](plots/node_grid_10000.png)
 
 By comparing the binned heatmap for each variable the correlation between variabels can be inspected. Variables showing the same distribution are strongly positivly correlated,  opposite maps show negative correlation. A very noisy heatmap would represent a variable, which has no influence on the binning.
