@@ -47,6 +47,7 @@ class RasterHelper:
 
                         # append to multiband list
                         band = np.where(band == 0, np.nan, band)
+                        band = band[1:-2 , 1:]
                         multiband.append(band)
                         raster.close()
 
