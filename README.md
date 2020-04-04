@@ -28,7 +28,7 @@ Input from Sentinel-2 (False Color Vegetation (8-3-1)) and US Crop Map:
 
 
 <p align="center">
-  <img width="600"  src="plots/data_and_label.png">
+  <img width="700"  src="plots/data_and_label.png">
 </p>
 
 Spectral Signature of sample pixels:
@@ -78,14 +78,14 @@ The hexagonal Map shows the ditribution of bins for the layer refelction of visi
 Binning after 1000 iterations
 
 <p align="center">
-  <img width="600"  src="plots/node_grid_1000.jpg">
+  <img width="450"  src="plots/node_grid_1000.jpg">
 </p>
 
 
 Binning afer 10000 iterations:
 
 <p align="center">
-  <img width="600"  src="plots/node_grid_10000.png">
+  <img width="450"  src="plots/node_grid_10000.png">
 </p>
 
 
