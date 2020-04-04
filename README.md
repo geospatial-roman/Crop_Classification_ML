@@ -5,9 +5,43 @@ By using freely available Sentintinel-2 data, a few applications are axplored in
 
 These notebooks are currently in this repository:
 
-- [Crop Classification](CropClassification.ipynb)
+- [Crop Classification (Machine-Learning)](Crops_Machine_Learning.ipynb)
+- [Crop Classification  (Self-Organizing-Maps)](Crops_SOM.ipynb)
 
-The repositories are all just a playground, so they are constantly work in progress and there might be more elegant ways of using the problems, so don't be to harsh on judgemtns and please let me know if you have ideas on how to improve the scripts ;)
+
+The repositories are all just a playground, so they are constantly work in progress and there might be more elegant ways of using the problems, so don't be to harsh on judgments and please let me know if you have ideas on how to improve the scripts ;)
+
+
+_____________________________________________________________________________________________________________________
+
+## Crop Classification (using Machine Learning)
+
+This notebook contains the investigation of Sentinel-2 Satellite Imagery for crop classifications. By using the [US Cropland Data Layer](https://nassgeodata.gmu.edu/CropScape/) three types of machine Learning Models are trained :
+ - Logistic regression 
+ - Decision Tree Classifier
+ - Random Forest Classifier
+
+The models will be trained on the spectral sicnature of the pixels in a single month (June) before the results are compared to models trained on 2 months (June and September) in order to see the improvemnt of additional, multi-temporal data. This additinal data allows to estimate the plan phenology and therefor is more insight full to classifiy different crops.
+
+
+Input from Sentinel-2 (False Color Vegetation (8-3-1)) and US Crop Map:
+
+
+<p align="center">
+  <img width="600"  src="plots/data_and_label.png">
+</p>
+
+Spectral Signature of sample pixels:
+
+<p align="center">
+  <img width="600"  src="plots/spec_sig_2months.png">
+</p>
+
+Results Logistic Regression for full Map:
+
+<p align="center">
+  <img width="600"  src="plots/results.png">
+</p>
 
 
 
