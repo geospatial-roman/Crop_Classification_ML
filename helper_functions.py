@@ -3,6 +3,10 @@ import numpy as np
 from rasterio.mask import mask
 import os
 from skimage import measure
+import matplotlib.patches as patches
+from matplotlib.lines import Line2D
+import matplotlib as mpl
+from matplotlib import cm
 
 
 class RasterHelper:
@@ -47,7 +51,6 @@ class RasterHelper:
 
                         # append to multiband list
                         band = np.where(band == 0, np.nan, band)
-                        band = band[1:-2 , 1:]
                         multiband.append(band)
                         raster.close()
 
@@ -56,3 +59,34 @@ class RasterHelper:
         print(f" Files were loaded sucessfully. " )
 
         return multiband_array
+
+
+class LegendHelper:
+
+    def __init__(self):
+
+        self.patch_legend = [
+                   patches.Patch(facecolor=[0,0,0,0], edgecolor='r', linewidth =3,
+                         label='Training Area'),
+                    patches.Patch(facecolor=[0,0,0,0], edgecolor='b', linewidth =3,
+                         label='Test Area'),
+                    patches.Patch(facecolor=cm.viridis(1/5), edgecolor=cm.viridis(1/5),
+                         label='Corn'),
+                    patches.Patch(facecolor=cm.viridis(2/5), edgecolor=cm.viridis(2/5),
+                         label='Dry Beans'),
+                    patches.Patch(facecolor=cm.viridis(3/5), edgecolor=cm.viridis(3/5),
+                         label='Soy Beans'),
+                    patches.Patch(facecolor=cm.viridis(4/5), edgecolor=cm.viridis(4/5),
+                         label='Sugar Beets'),
+                    patches.Patch(facecolor=cm.viridis(5/5), edgecolor=cm.viridis(5/5),
+                         label='Spring Wheat')
+                         ]
+
+        self.line_legend = [
+                    Line2D([0], [0], color=cm.viridis(1/5), lw=2, label='Corn'),
+                    Line2D([0], [0], color=cm.viridis(2/5), lw=2, label='Dry Beans'),
+                    Line2D([0], [0], color=cm.viridis(3/5), lw=2, label='Soy Beans'),
+                    Line2D([0], [0], color=cm.viridis(4/5), lw=2, label='Sugar Beets'),
+                    Line2D([0], [0], color=cm.viridis(5/5), lw=2, label='Spring Wheat'),
+
+        ]
