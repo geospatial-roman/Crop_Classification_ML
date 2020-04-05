@@ -40,7 +40,7 @@ Spectral Signature of sample pixels:
 Results Logistic Regression for full Map:
 
 <p align="center">
-  <img width="600"  src="plots/results.png">
+  <img width="750"  src="plots/results.png">
 </p>
 
 
@@ -86,6 +86,20 @@ Binning afer 10000 iterations:
 
 <p align="center">
   <img width="450"  src="plots/node_grid_10000.png">
+</p>
+
+By projecting the correstponding pixels to the feature maps and applying a k-means clustering on the on the distribution. The pixels can be assigned to clsuters of similar spectral signatures.
+
+The resulting map will will look something like this:
+
+<p align="center">
+  <img width="500"  src="plots/clustered_map.png">
+</p>
+
+Now by accumulating the clusters and plot with on representative spectral signature per class, the spectral signatures for each cluster can be shown. The plto show the mean refelctance per class with the according std. Deviation
+
+<p align="center">
+  <img width="500"  src="plots/clustered_signatures.png">
 </p>
 
 
